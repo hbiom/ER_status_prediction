@@ -5,7 +5,7 @@ This repository contains script to train machine learning model on **transcripto
 
 ## Dataset
 
-This dataset was initialy found here [NCBI](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=gse7390) and has been used in the study below :
+This dataset was initialy found here [NCBI](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=gse7390) and has been used in the studies below :
 
 - Desmedt C, Piette F, Loi S, Wang Y et al. Strong time dependence of the 76-gene prognostic signature for node-negative breast cancer patients in the TRANSBIG multicenter independent validation series. Clin Cancer Res 2007 Jun 1;13(11):3207-14. PMID: 17545524
 
