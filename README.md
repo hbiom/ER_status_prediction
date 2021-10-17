@@ -32,7 +32,7 @@ Model training and shap
 
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/er_type_distribution.png)
 
-We have an unbalance dataset (about 1:2 ration) with more ER positive patients. Now, we going to see if we can cluster this 2 groups using gene expression by clustering. We used PCA and T-SNE
+We have an unbalanced dataset (about 1:2 ration) with more ER positive patients. Now, we going to see if we can cluster this 2 groups using gene expression by clustering. We used PCA and T-SNE
 
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/reduction_dim.png)
 
@@ -71,15 +71,15 @@ We obtained the following results :
 
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/score_models.png) 
 
-The models performed well. The dataset is unbalance but we obtain good sensitivity/specificity and F1 score as well.
+The models performed well. The dataset is unbalanced but we obtain good sensitivity/specificity and F1 score as well.
 
-Lets try to explain the randomforst model with fetature importances and shap approaches
+Lets try to explain the randomforst model with feature importances with shap approaches
 
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/shap.png) 
 
 ## Conclusion
 
-We found the same 3 top genes than before. Beside its seems that higher level of GATA3, BCL2.2 and ESR1 transcripts are associated with ER positive tumors.
+Its seems that higher level of GATA3, BCL2.2 and ESR1 transcripts are associated with ER positive tumors.
 
 Interestingly, both ESR1 is the Estrogen Receptor 1 and GATA3 (involve in ESR1 signaling) are both often mutated in breast cancer. It's seems this markers can be use to differentiate ER positive and negative patient in most of the case.
 
