@@ -19,8 +19,10 @@ These dataset contain microarray (GPL96 Affymetrix Human Genome U133A Array) fro
 ```
 # Exploratory data analysis 
 - breast_cancer_EDA.ipynb
+
 Feature selection
 - Feature_selection_Lasso.ipynb
+
 Model training and shap
 - er_prediction.ipynb
 
@@ -28,11 +30,11 @@ Model training and shap
 
 ## Exploratory data analysis
 
-![alt text]()
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/er_type_distribution.png)
 
 We have an unbalance dataset (about 1:2 ration) with more ER positive patients. Now, we going to see if we can cluster this 2 groups using gene expression by clustering. We used PCA and T-SNE
 
-![alt text]()
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/reduction_dim.png)
 
 We can see the negative and positve ER patient group quite easily notably on PCA. Now, we are going to select feature to then train a machine learning models to classify ER status
 
@@ -50,14 +52,14 @@ Differential gene expression (DGE) and F-score selection [Here (https://www.scie
 
 We whose to used LASSO selection and obtain the following genes :
 
-![alt text]()
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/gene_selected_lasso.png)
 
 Interestingly, ESR1, the estrogen receptor 1 has been selected.
 
 
-Correlation heatmap        |  Feature correlation with ER
-:-------------------------:|:-------------------------:
-![alt text]()              |  ![alt text]()
+Correlation heatmap                                                                         |  Feature correlation with ER
+:------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------:
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/heatmap.png) |  ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/feature_importance.png)
 
 
 We can see the negative and positve ER patient group quite easily notably on PCA. Now, we are going to select feature to then train a machine learning models to classify ER status
@@ -67,13 +69,13 @@ We can see the negative and positve ER patient group quite easily notably on PCA
 We trained 3 models : LogisticRegression, GradientBoosting and Classifier andRandomForestClassifier.
 We obtained the following results : 
 
-![alt text]() 
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/score_models.png) 
 
 The models performed well. The dataset is unbalance but we obtain good sensitivity/specificity and F1 score as well.
 
 Lets try to explain the randomforst model with fetature importances and shap approaches
 
-![alt text]() 
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/shap.png) 
 
 ##Conclusion
 
