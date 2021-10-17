@@ -77,7 +77,7 @@ Lets try to explain the randomforst model with fetature importances and shap app
 
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/shap.png) 
 
-##Conclusion
+## Conclusion
 
 We found the same 3 top genes than before. Beside its seems that higher level of GATA3, BCL2.2 and ESR1 transcripts are associated with ER positive tumors.
 
