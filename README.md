@@ -44,11 +44,11 @@ We can see the negative and positve ER patient group quite easily notably on PCA
 
 There are 2216 genes and only 198 patients. We need to perform feature selection to train a machine learning model. After research, several feature selection workflow have been used on transcriptomic data including :
 
-Recursive feature elimination (RFE)
+- Recursive feature elimination [RFE] (https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-3317-7)
 
-Least absolute shrinkage and selection operator (LASSO)
+- Least absolute shrinkage and selection operator [LASSO] (https://www.nature.com/articles/s41598-021-92692-0)
 
-Differential gene expression (DGE) and F-score selection [Here (https://www.sciencedirect.com/science/article/pii/S2162253120300767)
+- Differential gene expression (DGE) and F-score selection [Here] (https://www.sciencedirect.com/science/article/pii/S2162253120300767)
 
 We whose to used LASSO selection and obtain the following genes :
 
