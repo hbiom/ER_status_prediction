@@ -50,7 +50,7 @@ There are 2216 genes and only 198 patients. We need to perform feature selection
 
 - Differential gene expression (DGE) and F-score selection [Here](https://www.sciencedirect.com/science/article/pii/S2162253120300767)
 
-We whose to used LASSO selection and obtain the following genes :
+We choose to used LASSO selection and obtain the following genes :
 
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/gene_selected_lasso.png)
 
