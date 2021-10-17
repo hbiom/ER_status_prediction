@@ -81,7 +81,7 @@ Lets try to explain the randomforst model with feature importances with shap app
 
 Its seems that higher level of GATA3, BCL2.2 and ESR1 transcripts are associated with ER positive tumors.
 
-Interestingly, both ESR1 is the Estrogen Receptor 1 and GATA3 (involve in ESR1 signaling) are both often mutated in breast cancer. It's seems this markers can be use to differentiate ER positive and negative patient in most of the case.
+Interestingly, both ESR1 is the Estrogen Receptor 1 and GATA3 (involved in ESR1 signaling) are both often mutated in breast cancer. It's seems this markers can be use to differentiate ER positive and negative patient in most of the case.
 
 However, several aspect have not been take into account in this projet. The models we trained had quite higth predictive power but we did not :
 
