@@ -5,6 +5,22 @@ This repository contains script to train machine learning model on **transcripto
 
 ## Dataset
 
+
+```
+# create a directory
+
+mkdir Brest_tumor_dataset
+cd Brest_tumor_dataset
+
+# download the dataset
+wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE7nnn/GSE7390/suppl/GSE7390_transbig2006affy.RData.gz
+
+# unzip the dataset
+gunzip GSE7390_transbig2006affy.RData.gz
+
+```
+
+
 This dataset was initialy found here [NCBI](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=gse7390) and has been used in the studies below :
 
 - Desmedt C, Piette F, Loi S, Wang Y et al. Strong time dependence of the 76-gene prognostic signature for node-negative breast cancer patients in the TRANSBIG multicenter independent validation series. Clin Cancer Res 2007 Jun 1;13(11):3207-14. PMID: 17545524
@@ -17,7 +33,7 @@ These dataset contain microarray (GPL96 Affymetrix Human Genome U133A Array) fro
 ## Repository
 
 ```
-# Exploratory data analysis 
+# Exploratory data analysis
 - breast_cancer_EDA.ipynb
 
 Feature selection
@@ -67,15 +83,15 @@ We can see the negative and positve ER patient group quite easily notably on PCA
 ## ER prediction
 
 We trained 3 models : LogisticRegression, GradientBoosting and Classifier andRandomForestClassifier.
-We obtained the following results : 
+We obtained the following results :
 
-![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/score_models.png) 
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/score_models.png)
 
 The models performed well. The dataset is unbalanced but we obtain good sensitivity/specificity and F1 score as well.
 
 Lets try to explain the randomforst model with feature importances with shap approaches
 
-![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/shap.png) 
+![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/shap.png)
 
 ## Conclusion
 
