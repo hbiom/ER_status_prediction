@@ -78,8 +78,6 @@ Correlation heatmap                                                             
 ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/heatmap.png) |  ![alt text](https://github.com/hbiom/ER_status_prediction/blob/main/readme_img/feature_importance.png)
 
 
-We can see the negative and positve ER patient group quite easily notably on PCA. Now, we are going to select feature to then train a machine learning models to classify ER status
-
 ## ER prediction
 
 We trained 3 models : LogisticRegression, GradientBoosting and Classifier andRandomForestClassifier.
