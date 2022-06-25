@@ -1,2 +1,6 @@
 GSE7390.RData
 .ipynb_checkpoints
+
+
+__pycache__/
+.pyc
