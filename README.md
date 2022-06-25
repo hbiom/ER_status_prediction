@@ -99,7 +99,5 @@ Interestingly, both ESR1 is the Estrogen Receptor 1 and GATA3 (involved in ESR1 
 
 However, several aspect have not been take into account in this projet. The models we trained had quite higth predictive power but we did not :
 
-Perform cross validation to asssess preformances stability over different fold
-Test ours models on external validation cohort to assess performance on external patient
-We also try just LASSO data feature selection along others (RFE, DGE) used to select relevant gene in transcriptomic study and we did not perform model optimization.
+Perform cross validation to asssess preformances stability over different fold test ours models on external validation cohort to assess performance on external patient. We also try just LASSO data feature selection along others (RFE, DGE) used to select relevant gene in transcriptomic study and we did not perform model optimization.
 
