@@ -8,3 +8,5 @@ __pycache__/
 
 
 utility.egg-info
+dist
+build/lib/utility
