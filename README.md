@@ -25,14 +25,32 @@ These dataset contain microarray (GPL96 Affymetrix Human Genome U133A Array) fro
 ## Repository
 
 ```
-# Exploratory data analysis
-- breast_cancer_EDA.ipynb
+ |-utility
+ | |-lib.py
+ | |-get_data.py
+ | |-__init__.py
 
-Feature selection
-- Feature_selection_Lasso.ipynb
+ |-notebook
+ | | |-Feature_selection_Lasso-checkpoint.ipynb # Feature selection
+ | | |-er_prediction-checkpoint.ipynb # Model training and shap
+ | | |-breast_cancer_EDA-checkpoint.ipynb # Exploratory data analysis
 
-Model training and shap
-- er_prediction.ipynb
+
+ |-script
+ | |-get_affy_data.sh
+
+ |-data
+ | |-GSE7390.RData
+ | |-df_gene_selected_lasso.csv
+ | |-annot.csv
+ | |-gene_expression_er.csv
+
+ |-LICENSE
+ |-readme_img
+ |-.gitignore
+ |-README.md
+ |-setup.py
+ |-requirements.txt
 
 ```
 
