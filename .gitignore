@@ -4,6 +4,7 @@ data/GSE7390.RData
 
 __pycache__/
 .pyc
+.egg
 
 
 utility.egg-info
