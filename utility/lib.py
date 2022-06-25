@@ -1,13 +1,13 @@
 
 from sklearn.metrics import roc_curve, auc, confusion_matrix, roc_auc_score
 import pandas as pd
-
+import numpy as np
 
 def probe_to_gene(probe):
     '''
     to do : add doc
     '''
-    annot = pd.read_csv('annot.csv')
+    annot = pd.read_csv('../data/annot.csv')
     gene_dico = dict(zip(annot['probe'], annot['HUGO.gene.symbol']))
 
     'replace affymetric probe by gene name from annot file'
