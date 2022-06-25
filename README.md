@@ -7,16 +7,8 @@ This repository contains script to train machine learning model on **transcripto
 
 
 ```
-# create a directory
-
-mkdir Brest_tumor_dataset
-cd Brest_tumor_dataset
-
-# download the dataset
-wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE7nnn/GSE7390/suppl/GSE7390_transbig2006affy.RData.gz
-
-# unzip the dataset
-gunzip GSE7390_transbig2006affy.RData.gz
+# dowload affymetrix dataset in data folder
+script/get_affy_data.sh
 
 ```
 

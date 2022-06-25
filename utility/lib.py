@@ -1,9 +1,15 @@
 
 from sklearn.metrics import roc_curve, auc, confusion_matrix, roc_auc_score
+import pandas as pd
 
 
+def probe_to_gene(probe):
+    '''
+    to do : add doc
+    '''
+    annot = pd.read_csv('annot.csv')
+    gene_dico = dict(zip(annot['probe'], annot['HUGO.gene.symbol']))
 
-def probe_to_gene(probe, gene_dico):
     'replace affymetric probe by gene name from annot file'
     if probe in gene_dico:
         return gene_dico[probe]
