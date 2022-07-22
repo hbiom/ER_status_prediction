@@ -5,6 +5,7 @@ This repository contains script to train machine learning model on **transcripto
 
 ## Dataset
 
+run the bash script below to obtain trancriptomic data :
 
 ```
 # dowload affymetrix dataset in data folder
